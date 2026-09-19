@@ -456,7 +456,7 @@ footer{background:var(--green-900);color:#a9b3a2}
       <li>每学期社刊收录社员作品</li>
       <li>对外征文与比赛统一推荐</li>
     </ul>
-    <button class="btn btn-primary" id="joinBtn">立即报名加入</button>
+    <a class="btn btn-primary" href="https://qun.qq.com/universal-share/share?ac=1&authKey=9hLPKA1vUecoyou4ZzOUH9jwNkd3PDMQ1L0rLkzzTtHlXdaSlxNV7G4tKBQBaQYu&busi_data=eyJncm91cENvZGUiOiIxMTI2MjI3MjA0IiwidG9rZW4iOiI2ZjA3TnVDQnRnSjE5VjZ1NWtHNGxsVGl6V0UrOWtyZU9lREgwU1Bva25vMjJWZFcrR3hKb1MzSTNHSi9uM2xwIiwidWluIjoiNTcwODQ4MDY5In0%3D&data=iS8NSgjUBU_CAWKqEG7xdjEq2oOAl1r-m2jHIzeNGLA-NKb5SRobralAFpTyVIeyXJVGoZp0lKDGzBgk8jg1Lw&svctype=4&tempid=h5_group_info" target="_blank" rel="noopener">立即报名加入</a>
   </div>
 </section>
 
@@ -494,8 +494,6 @@ footer{background:var(--green-900);color:#a9b3a2}
   </div>
 </footer>
 
-<div class="toast" id="toast">报名通道已开启，请于活动时间到图书馆三楼文学社登记</div>
-
 <script>
 // 移动端菜单
 var toggle=document.getElementById('navToggle');
@@ -503,13 +501,6 @@ var menu=document.getElementById('menu');
 toggle.addEventListener('click',function(){menu.classList.toggle('open');});
 menu.querySelectorAll('a').forEach(function(a){
   a.addEventListener('click',function(){menu.classList.remove('open');});
-});
-// 报名 toast
-var toast=document.getElementById('toast');
-document.getElementById('joinBtn').addEventListener('click',function(){
-  toast.classList.add('show');
-  clearTimeout(window.__t);
-  window.__t=setTimeout(function(){toast.classList.remove('show');},2600);
 });
 </script>
 </body>
